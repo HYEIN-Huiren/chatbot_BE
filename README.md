@@ -1,7 +1,7 @@
 # chatbot_BE
 ## Python Server
 |구분|SW|버전|비고|
-|------|---|---|
+|---|---|---|
 |IDE|VSCode|VSCodeUserSetup-x64-1.80.1 |
 |Python|Python11|11.x|
 |패키지매니저|pip|최신|
