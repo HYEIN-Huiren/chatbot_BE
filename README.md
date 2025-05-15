@@ -67,5 +67,9 @@ ex) `C:\Users\TY\AppData\Local\Programs\Python\Python311\Scripts`
 ### API 기능 정리
 |기능|Request|HTTP|URI|
 |---|---|---|---|
-|사용자 질문 중복여부 확인 및 대답조회| |POST|/chat|
-|이전 질문 선택조회(사용자&관리자)||GET|/chat/{uuid}|
+|사용자 질문 중복여부 확인 및 대답조회|question, user, project|POST|/chat|
+|이전 질문 선택조회(사용자&관리자)|uuid|GET|/chat/{uuid}|
+|이전 질문 비활성화|uuid|PUT|/chat/disable|
+|프로젝트 질문 답변 수정|uuid, answer|PUT|/chat/update|
+|프로젝트 유형별 전체질문 및 갯수 조회|project, type|GET|/chat/list|
+|질문 전체조회(사용자)|user, project|POST|/chat/list|
