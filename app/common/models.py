@@ -18,23 +18,6 @@ class CommonBase(object):
     modifyDate = Column(name = "mod_dt", nullable=False, type_ = TIMESTAMP, default=func.now(), onupdate=func.now())
     registId = Column(name = "reg_id", type_ = VARCHAR, default = get_userId)
     modifyId = Column(name = "mod_id", type_ = VARCHAR, default = get_userId)
-
-
-# from __future__ import annotations
-# from pydantic import BaseModel
-
-
-# class OuterClass:
-#     class Student(BaseModel):
-#         name: str
-#         age: int
-
-#     class StudentRequest(BaseModel):
-#         ...
-#         students: list[OuterClass.Student]
-
-
-# OuterClass.StudentRequest.update_forward_refs()
     
 class CommonResponse(BaseModel):
     message: str | None

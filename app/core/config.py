@@ -12,8 +12,8 @@ def settings(mode: str = "local"):
     config = dotenv_values(f"{path}/app/env/.env.{mode}")
     config['GOOGLE_APPLICATION_CREDENTIALS'] = f"{path}/{config.get('GOOGLE_APPLICATION_CREDENTIALS')}"
 
-    config['ALGORITHM'] = ""
-    config['SECRET_KEY'] = ""
+    # config['ALGORITHM'] = ""
+    # config['SECRET_KEY'] = ""
 
     return config
 

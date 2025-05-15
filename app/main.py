@@ -3,9 +3,9 @@ import uvicorn
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-# from auth.route import auth
-# from chat.route import chat
-# from sql.route import sql
+from auth.route import auth
+from chat.route import chat
+from sql.route import sql # 서브서버로 동작
 # from routes.textToSQL import sql
 
 from core.config import getConfig
@@ -69,9 +69,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# app.include_router(auth)
-# app.include_router(chat)
-# app.include_router(sql)
+app.include_router(auth)
+app.include_router(chat)
+app.include_router(sql)
 
 if __name__ == "__main__":
     uvicorn.run("main:app",
