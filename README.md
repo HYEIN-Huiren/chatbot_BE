@@ -73,3 +73,7 @@ ex) `C:\Users\TY\AppData\Local\Programs\Python\Python311\Scripts`
 |프로젝트 질문 답변 수정|uuid, answer|PUT|/chat/update|
 |프로젝트 유형별 전체질문 및 갯수 조회|project, type|GET|/chat/list|
 |질문 전체조회(사용자)|user, project|POST|/chat/list|
+
+## ERD
+## Architectural Structure
+
