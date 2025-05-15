@@ -49,6 +49,7 @@ ex) `C:\Users\TY\AppData\Local\Programs\Python\Python311\Scripts`
 ||DBeaver|23.2.3||
 
 ## API 설계
+### 요구사항 정리
 |요구사항|중요도|비고|
 |---|---|---|
 |각 사용자는 서비스에 질문을 보내며 하나의 질문 당 하나의 대답을 리
@@ -61,3 +62,10 @@ ex) `C:\Users\TY\AppData\Local\Programs\Python\Python311\Scripts`
 |관리자는 전체 질문의 갯수와 그 비중 그리고 자주 사용되는 질문을 확
 인할 수 있다||다건 조회|
 |관리자는 사용자의 질문으로 생성된 대답을 올바르게 수정할 수 있다||단건 수정|
+
+
+### API 기능 정리
+|기능|Request|HTTP|URI|
+|---|---|---|---|
+|사용자 질문 중복여부 확인 및 대답조회| |POST|/chat|
+|이전 질문 선택조회(사용자&관리자)||GET|/chat/{uuid}|
