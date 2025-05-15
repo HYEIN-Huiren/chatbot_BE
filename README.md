@@ -23,30 +23,23 @@ ex) `C:\Users\TY\AppData\Local\Programs\Python\Python311\Scripts`
 가상환경 활성화
 `pipenv shell`
 파이썬 버전으로 인한 호환 문제가 생길 시 Pipfile 파일 제일 아래의 하위 버전 내용을 삭제합니다.
- ```1 # Pipfile
- 2
- 3 [requires]
- 4 python_version = "3.11"
- 5 # python_full_version = "3.11.4" # 주석처리```
+ ```# Pipfile
+
+ [requires]
+ python_version = "3.11"
+ # python_full_version = "3.11.4" # 주석처리```
+
 정상적으로 접속 성공시 커맨드 창에서 
-(가상환경명) 주소>로 표시 됩니다. 
+`(가상환경명) 주소>`로 표시 됩니다. 
 가상환경 내에서 필요 패키지 설치를 진행합니다.
- pip install -r requirements.txt
+ `pip install -r requirements.txt`
 아래 명령어를 이용해 fastapi 서버를 실행합니다.
- uvicorn app.main:app --host 호스트 --port PORT
- 5
+ `uvicorn app.main:app --host 호스트 --port PORT`
+
 가상환경 종료 
-exit
- FastAPI
- SQLAlchemy
+`exit`
+
+
  DataBase
-구분
-pipenv
- SW
-버전
-Postgresql
-비고
-최신
-DBeaver
- 23.2.3 
-CREATE EXTENSION vector
+|구분|SW|버전|비고|
+|------|----|-----|------|
